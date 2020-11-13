@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .list {
+            width: 50%;
+            margin: 0% auto;
+            border: solid;
+            overflow: hidden;
+            }
+            .list .inner {
+                float: left;/* 부모요소에  overflow:hidden */
+                width: 25.0000%;
+                border: 1px solid;
+                box-sizing: border-box;
+                
+            }
+            .content{
+                overflow: hidden;
+            }
+            .right{
+                float: right;
+            }
+            .left{
+                float: left;
+            }
+            .left span {display: block;}
+            .clear{clear: both;}
+    </style>
+</head>
+<body>
+    <div class="list">
+        <div class="inner">
+            <img src="img/bgimg.png" alt="">
+            <div class="content">
+                <div class="left">
+                    <span>좌측</span>
+                    <span>좌측</span>
+                    <span>좌측</span>
+                    <span>탑쌓기 해제</span>
+                </div>
+                <div class="right">우측</div>             
+                <div class="clear">clear이후 아래로 내려감</div>       
+                
+            </div>
+        </div>        
+        <div class="inner"><img src="img/bgimg.png" alt=""></div>        
+        <div class="inner"><img src="img/bgimg.png" alt=""></div>        
+        <div class="inner"><img src="img/bgimg.png" alt=""></div>        
+        
+    </div>
+</body>
+</html>

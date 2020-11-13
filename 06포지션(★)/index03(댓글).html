@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style type="text/css">
+        *{margin: 0 ; padding: 0px;}
+        .list-wrap{width: 50%; margin: 0 auto; padding: 10px; border: 1px solid; position: relative;}
+        .list-img{position: absolute;  left: 10px; top: 10px;}
+        .list-img img{ width: 50px;}
+        .list-content{padding-top: 10px; overflow: hidden;}
+        .list-content , .list-control{padding-left: 70px;}
+        .list-content textarea{width: 100%; box-sizing: border-box; height: 100px; resize: vertical; /* textarea의 수직으로만 수정가능 */ padding: 5px;}
+        .list-control{overflow: hidden;}
+        .list-control button{float: right;}
+        .list-control .list-input{float: left; }
+        .list-input input{display: block; width: 100px;}
+        
+        .list-wrap1{width: 50%; margin: 0 auto; padding: 10px; border: 1px solid; position: relative;}
+        .list-img1{position: absolute;  left: 10px; top: 20px;}
+        .list-img1 img{ width: 50px;}
+        .list-content1 button{float: right;}
+        .list-content1 .a{float: left;  font-weight: bold; font-size: larger;}
+        .list-content1{padding-top: 10px; overflow: hidden;}
+        .list-content1 , .list-control{padding-left: 70px;}
+        .b{clear: both;}
+    </style>
+<body>
+    <div class="list-wrap">
+        <div class="list-img">
+            <img src="img/bgimg.png" alt="">
+        </div>
+        <div class="list-content">
+            <textarea name="" placeholder="댓글영역"></textarea>
+        </div>
+        <div class="list-control">
+            <div class="list-input">
+                <input type="text">
+                <input type="text">
+            </div>
+            <button>등록하기</button>
+
+        </div>
+    </div>
+    <div class="list-wrap1">
+        <div class="list-img1">
+            <img src="img/bgimg.png" alt="">
+        </div>
+        <div class="list-content1">
+            <div class="a">제목</div>
+            
+            <button>삭제</button>
+            <button>수정</button>
+            <div class="b">내용</div>
+
+        </div>
+        
+            
+            
+
+        
+    </div>
+</body>
+</html>
