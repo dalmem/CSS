@@ -1,0 +1,94 @@
+
+/* form btn 윤곽  */
+.form-control{border-radius: 0%; }
+.btn {border-radius: 0%;}
+/* header=================== */
+section{margin-top: 50px;}
+.my-header {background-color: rgba(43, 4, 4, 0.87); position: fixed; top: 0; left: 0; width: 100%; z-index: 50;}
+.my-header a{color: white; font-size: 15px;}
+.navbar-brand {padding: 10px 20px;}
+/* 가상선택자 요소 색생 변경 */
+.nav>li>a:focus, .nav>li>a:hover{background-color: #8e2626;}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {background-color: #8e2626 ;}
+.navbar-toggle{background-color:rgba(43, 4, 4, 0.87) ;}
+.navbar-toggle { border: 1px solid #ffffff;}
+.navbar-toggle .icon-bar{background-color: white;}
+.navbar{margin-bottom: 0;}
+
+/* footer */
+footer{background-color:  rgba(43, 4, 4, 0.87); color: white; font-size: 10px; padding: 30px 0px; margin-top: 70px;}
+      footer .footer-copyright address {margin-bottom: 0;}
+      footer .footer-menu {text-align: right;} /* 부트스트랩의 text-right속성으로도 대체가능 */
+     footer .footer-menu li {display: inline-block;} 
+     footer .footer-menu li a{text-decoration: none; color: white; font-size: 12px; padding: 0 10px;}
+/* banner*/
+
+.my-banner{ position: relative;
+}
+        .carousel-control.right{background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);}
+        
+        .carousel-control.left{background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);}
+
+/* index */
+.prod-list, .prod-box{
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;/* 블럭이나 text가운데 정렬 */
+    
+  }
+  .prod-list, .prod-list>li {
+    padding: 5px;
+  }
+  .prod-box{position: relative;}
+  .prod-box .arrow {
+    display: block; /* 높이 넓이를 사용하기 위해 블럭지정 */
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    position: absolute; /* 위치기반으로 올릴 부모클래스에 relative */
+    bottom: 15px;
+    left: 15px;
+    background-color: #ccc;
+    color: white;
+    
+    opacity: 1;
+    
+  }        
+  .prod-box .hover{ display: block;
+  background-color: #1367e6;
+  color: white;
+  position: absolute;
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  bottom: 15px;
+  left: 15px;
+  opacity: 0; /* 투명도 0-1 */        
+}
+.prod-box:hover > .arrow{
+  opacity: 0;
+}
+.prod-box:hover > .hover{
+  opacity: 1;
+  
+}
+.prod-box:hover{
+  border: 1px solid #1367e6 ;opacity: 1;
+}
+
+/* ===============상품 그리드 */
+.prod-content{overflow: hidden; padding: 20px 0;}
+        .prod-content .prod-info{  float: left; }
+        .prod-info span{display: block;}
+        .prod-content .prod-price{float: right;}
+        .prod-img {text-align: center;}
+
+        .prod-color{margin-top: -38px; opacity: 0; transition: opacity 0.2s ease-in-out;} /* transition(변경할 옵션,주기,변경속도,딜레이초) */
+        .prod-color ul{overflow: hidden; }
+        .prod-color ul li{float: left;}
+        .prod-list2:hover > .prod-color{opacity: 1;}
+
+        .text-center {overflow: hidden;}
+        .text-center ul{margin: 0; }
+        .text-center button {float: right; padding: 4px 12px;} 
